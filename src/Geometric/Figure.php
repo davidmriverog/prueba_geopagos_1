@@ -15,5 +15,5 @@ interface Figure
      * 
      * @return double
      */
-    public function area();
+    public function calculateArea();
 }
