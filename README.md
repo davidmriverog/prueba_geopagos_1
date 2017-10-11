@@ -11,3 +11,14 @@ como así también una descripción de las tareas más comunes.
 
 Ya abierto el terminal ubica el sitio donde clonaremos el proyecto
 
+### A continuación clonamos nuestro proyecto.
+
+```
+git clone -b your_branch url_repository 
+```
+
+### Ejectuamos el gestor de dependencia para descargar las librerias auto compilado y entre otros.
+
+```
+composer install
+```
