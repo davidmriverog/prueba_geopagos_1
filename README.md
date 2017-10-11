@@ -17,7 +17,7 @@ Ya abierto el terminal ubica el sitio donde clonaremos el proyecto
 git clone url_repository 
 ```
 
-### Ejectuamos el gestor de dependencia para descargar las librerias auto compilado y entre otros.
+### Ejectuamos el gestor de dependencia composer para descargar las librerias auto compilado y entre otros.
 
 ```
 composer install
