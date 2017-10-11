@@ -31,6 +31,16 @@ class Circle implements Figure
     }
 
     /**
+     * Get Area Radio.
+     * 
+     * @return double
+     */
+    public function getAreaRadio()
+    {
+        return $this->areaRadio;
+    }
+
+    /**
      * Set Radio
      * 
      * @param double $radio
@@ -45,6 +55,6 @@ class Circle implements Figure
      */
     public function calculateArea()
     {
-        //
+        $this->areaRadio = Utils::PI * $this->radio * $this->radio;
     }
 }
