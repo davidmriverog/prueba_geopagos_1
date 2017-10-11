@@ -1,0 +1,19 @@
+{
+    "name": "prueba/geopagos",
+    "description": "Examen 1 - PHP Geopagos",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David M. Rivero G.",
+            "email": "davidmriverog@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload":{
+        "files":["src/helpers.php"],
+        "psr-4":{
+            "Geopagos\\":"src/"
+        }
+    }
+}
