@@ -1,6 +1,6 @@
 <?php
 
-namespace Geometric;
+namespace Geopagos\Geometric;
 
 /**
  * interface Figure
