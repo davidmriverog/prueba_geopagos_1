@@ -1,11 +1,11 @@
 <?php
 
-namespace MyCommunity\Geometric;
+namespace Geopagos\Geometric;
 
 /**
  * interface Figure
  *
- * @package MyCommunity\Geometric;
+ * @package Geopagos\Geometric;
  * @author David Rivero <[<davidmriverog@gmail.com>]>
  */
 interface Figure

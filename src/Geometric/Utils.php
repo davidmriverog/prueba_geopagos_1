@@ -1,11 +1,11 @@
 <?php
 
-namespace MyCommunity\Geometric;
+namespace Geopagos\Geometric;
 
 /**
  * class Utils 
  *
- * @package MyCommunity\Geometric;
+ * @package Geopagos\Geometric;
  * @author David Rivero <[<davidmriverog@gmail.com>]>
  */
 class Utils
@@ -13,5 +13,5 @@ class Utils
     /**
      * @var double
      */
-    const PI = 3.1415;
+    const PI = 3.1416;
 }

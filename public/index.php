@@ -1,8 +1,8 @@
 <?php
 
-namespace MyCommunity;
+namespace Geopagos;
 
-use MyCommunity\Geometric\Circle;
+use Geopagos\Geometric\Circle;
 
 require '../vendor/autoload.php';
 

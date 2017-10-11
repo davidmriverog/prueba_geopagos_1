@@ -1,11 +1,11 @@
 <?php
 
-namespace MyCommunity\Geometric;
+namespace Geopagos\Geometric;
 
 /**
  * class Circle 
  *
- * @package MyCommunity\Geometric;
+ * @package Geopagos\Geometric;
  * @author David Rivero <[<davidmriverog@gmail.com>]>
  */
 class Circle implements Figure
