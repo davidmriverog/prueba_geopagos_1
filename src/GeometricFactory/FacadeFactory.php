@@ -12,15 +12,9 @@ interface FacadeFactory
 {
     /**
      * Create Instance By Factory Pattern
-     * 
+     *
+     * @param  array $attrs
      * @return mixed
      */
-    public static function create();
-
-    /**
-     * Calctuate Area of Figure.
-     * 
-     * @return double
-     */
-    public function calculateArea();
+    public static function create(array $attrs);
 }

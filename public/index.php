@@ -10,6 +10,7 @@ require '../vendor/autoload.php';
 
 // Implements
 
+show("*** INICIO DEL MODO 1 ***");
 // Circulo
 show("*** CIRCULO ***");
 $circle = new Circle;
@@ -35,3 +36,7 @@ $triangle->setHeight(2);
 show("Ingresamos la altura del triangulo: {$triangle->getHeight()}");
 $triangle->calculateArea();
 show("El area del cuadrado es: {$triangle->getArea()}");
+
+show("*** FIN DEL MODO 1 ***");
+
+show("*** INICIO DEL MODO 2 ***");
