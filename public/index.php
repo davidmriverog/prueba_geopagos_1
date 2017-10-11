@@ -11,6 +11,7 @@ use Geopagos\Geometric\Triangle;
 use Geopagos\GeometricFactory\FigureFactory;
 use Geopagos\AbstractFigure\CircleFigure;
 use Geopagos\AbstractFigure\SquareFigure;
+use Geopagos\AbstractFigure\TriangleFigure;
 
 require '../vendor/autoload.php';
 
@@ -58,3 +59,9 @@ $squareFactory = FigureFactory::create(['name' => 'Cuadrado'])
 
 $squareFactory->calculateArea();
 $squareFactory->show();
+
+$triangleFactory = FigureFactory::create(['name' => 'Triangulo'])
+    ->setFigure(new TriangleFigure(['base' => 2, 'height' => 2]));
+
+$triangleFactory->calculateArea();
+$triangleFactory->show();
