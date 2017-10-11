@@ -8,17 +8,12 @@ namespace Geopagos\Geometric;
  * @package Geopagos\Geometric;
  * @author David Rivero <[<davidmriverog@gmail.com>]>
  */
-class Circle implements Figure
+class Circle extends Figure
 {
     /**
      * @var double
      */
     protected $radio;
-
-    /**
-     * @var double
-     */
-    protected $areaRadio;
 
     /**
      * Get Radio.
@@ -28,16 +23,6 @@ class Circle implements Figure
     public function getRadio()
     {
         return $this->radio;
-    }
-
-    /**
-     * Get Area Radio.
-     * 
-     * @return double
-     */
-    public function getAreaRadio()
-    {
-        return $this->areaRadio;
     }
 
     /**
@@ -55,6 +40,6 @@ class Circle implements Figure
      */
     public function calculateArea()
     {
-        $this->areaRadio = pow($this->getRadio(), 2) * Utils::PI;
+        $this->area = pow($this->getRadio(), 2) * Utils::PI;
     }
 }

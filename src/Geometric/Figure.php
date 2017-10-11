@@ -8,12 +8,27 @@ namespace Geopagos\Geometric;
  * @package Geopagos\Geometric;
  * @author David Rivero <[<davidmriverog@gmail.com>]>
  */
-interface Figure
+abstract class Figure
 {
+    /**
+     * @var double
+     */
+    protected $area;
+
+    /**
+     * Get Area Figure.
+     * 
+     * @return double
+     */
+    public function getArea()
+    {
+        return $this->area;
+    }
+
     /**
      * Calculate Area Figure.
      * 
      * @return double
      */
-    public function calculateArea();
+    abstract public function calculateArea();
 }

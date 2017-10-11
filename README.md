@@ -26,7 +26,7 @@ composer install
 ### Por ultimo donde tenemos descargado o clonado el proyecto nos iremos a nuestro navegador de preferencia y copiamos la siguiente ruta para ejecutar el ejercicio
 
 ```
-http://localhost/prueba_1/public/
+http://localhost/prueba_geopagos_1/public/
 ```
 
 ## Authors

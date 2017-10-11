@@ -12,9 +12,9 @@ require '../vendor/autoload.php';
 show("*** CIRCULO ***");
 $circle = new Circle;
 
-$circle->setRadio(5);
+$circle->setRadio(2);
 show("Ingresamos el radio: {$circle->getRadio()}");
 $circle->calculateArea();
 
-show("El area del circulo es: {$circle->getAreaRadio()}");
+show("El area del circulo es: {$circle->getArea()}");
 
