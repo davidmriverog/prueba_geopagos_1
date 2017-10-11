@@ -2,6 +2,8 @@
 
 namespace Geopagos\GeometricFactory;
 
+use Geopagos\AbstractFigure\InterfaceFigure;
+
 /**
  * class Geometric
  *
@@ -16,6 +18,11 @@ class Geometric
     protected $attributes = [];
 
     /**
+     * @var InterfaceFigure
+     */
+    protected $figure;
+
+    /**
      * Geometric construct.
      * 
      * @param array $attributes
@@ -23,6 +30,16 @@ class Geometric
     public function __construct(array $attributes=[])
     {
         $this->fill($attributes);
+    }
+
+    /**
+     * Get Attributes.
+     * 
+     * @return array
+     */
+    public function getAttributes()
+    {
+        return $this->attributes;
     }
 
     /**
@@ -43,10 +60,56 @@ class Geometric
      * 
      * @param string $name
      * @param string $value
+     * @return mixed
      */
     public function setAttribute($name,$value)
     {
         $this->attributes[$name] = $value;
+    }
+
+    /**
+     * Set Figure Data.
+     * 
+     * @param InterfaceFigure $figure
+     */
+    public function setFigure(InterfaceFigure $figure)
+    {
+        $this->figure = $figure;
+
+        return $this;
+    }
+
+    public function calculateArea()
+    {
+        return $this->figure->calculateArea();
+    }
+
+    public function getArea()
+    {
+        return $this->figure->getArea();
+    }
+
+    /**
+     * Get Semantic Geometric.
+     * 
+     * @param $name
+     * @return mixed
+     */
+    public function __get($name)
+    {
+        return $this->getAttribute($name);
+    }
+
+    /**
+     * Get Semantic Geometric.
+     * 
+     * @param string $name
+     * @param string $value
+     * @return mixed
+     */
+    public function __set($name,$value)
+    {
+        return $this->setAttribute($name,$value);
     }
 
     /**

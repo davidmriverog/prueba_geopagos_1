@@ -2,9 +2,14 @@
 
 namespace Geopagos;
 
+// Modo 1
 use Geopagos\Geometric\Circle;
 use Geopagos\Geometric\Square;
 use Geopagos\Geometric\Triangle;
+
+// Modo 2
+use Geopagos\GeometricFactory\FigureFactory;
+use Geopagos\AbstractFigure\CircleFigure;
 
 require '../vendor/autoload.php';
 
@@ -39,4 +44,11 @@ show("El area del cuadrado es: {$triangle->getArea()}");
 
 show("*** FIN DEL MODO 1 ***");
 
-show("*** INICIO DEL MODO 2 ***");
+show("*** INICIO DEL MODO 2 *** - Usando la capa factory");
+
+$circleFactory = FigureFactory::create(['name' => 'Circulo'])
+    ->setFigure(new CircleFigure(['radio' => 2]));
+
+$circleFactory->calculateArea();
+
+show("Figura: {$circleFactory->name} tiene un area de: {$circleFactory->getArea()}");

@@ -2,6 +2,12 @@
 
 namespace Geopagos\GeometricFactory;
 
+/**
+ * class FigureFactory
+ *
+ * @package Geopagos\GeometricFactory;
+ * @author David Rivero <[<davidmriverog@gmail.com>]>
+ */
 class FigureFactory implements FacadeFactory
 {
     /**
@@ -9,6 +15,6 @@ class FigureFactory implements FacadeFactory
      */
     public static function create(array $attrs)
     {
-        return Geometric()
+        return new Geometric($attrs);
     }
 }
