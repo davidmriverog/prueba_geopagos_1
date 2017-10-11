@@ -1,11 +1,11 @@
 <?php
 
-namespace Geopagos\Geometric;
+namespace MyCommunity\Geometric;
 
 /**
  * class Circle 
  *
- * @package Geopagos\Geometric;
+ * @package MyCommunity\Geometric;
  * @author David Rivero <[<davidmriverog@gmail.com>]>
  */
 class Circle implements Figure
@@ -45,9 +45,9 @@ class Circle implements Figure
      * 
      * @param double $radio
      */
-    public function setRadio(double $radio)
+    public function setRadio($radio)
     {
-        $this->radio = $value;
+        $this->radio = $radio;
     }
 
     /**
@@ -55,6 +55,6 @@ class Circle implements Figure
      */
     public function calculateArea()
     {
-        $this->areaRadio = Utils::PI * $this->radio * $this->radio;
+        $this->areaRadio = pow($this->getRadio(), 2) * Utils::PI;
     }
 }
