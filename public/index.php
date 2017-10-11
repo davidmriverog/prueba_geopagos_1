@@ -4,6 +4,7 @@ namespace Geopagos;
 
 use Geopagos\Geometric\Circle;
 use Geopagos\Geometric\Square;
+use Geopagos\Geometric\Triangle;
 
 require '../vendor/autoload.php';
 
@@ -25,4 +26,12 @@ show("Ingresamos el lado del cuadrado: {$square->getSideOfSquare()}");
 $square->calculateArea();
 show("El area del cuadrado es: {$square->getArea()}");
 
-
+// Triangulo
+show("*** TRIANGULO ***");
+$triangle = new Triangle;
+$triangle->setBase(2);
+show("Ingresamos la base del triangulo: {$triangle->getBase()}");
+$triangle->setHeight(2);
+show("Ingresamos la altura del triangulo: {$triangle->getHeight()}");
+$triangle->calculateArea();
+show("El area del cuadrado es: {$triangle->getArea()}");
