@@ -29,6 +29,7 @@ class Circle extends Figure
      * Set Radio
      * 
      * @param double $radio
+     * @return  mixed
      */
     public function setRadio($radio)
     {
