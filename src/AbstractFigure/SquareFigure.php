@@ -2,15 +2,13 @@
 
 namespace Geopagos\AbstractFigure;
 
-use Geopagos\Geometric\Utils;
-
 /**
  * class SquareFigure
  *
  * @package Geopagos\AbstractFigure;
  * @author David Rivero <[<davidmriverog@gmail.com>]>
  */
-class CircleFigure extends InterfaceFigure
+class SquareFigure extends InterfaceFigure
 {
     /**
      * CircleFigure construct.
@@ -27,6 +25,6 @@ class CircleFigure extends InterfaceFigure
      */
     public function calculateArea()
     {
-        return $this->area = pow($this->data['radio'], 2) * Utils::PI;
+        return $this->area = pow($this->data['slide'], 2);
     }
 }

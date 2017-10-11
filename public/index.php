@@ -10,6 +10,7 @@ use Geopagos\Geometric\Triangle;
 // Modo 2
 use Geopagos\GeometricFactory\FigureFactory;
 use Geopagos\AbstractFigure\CircleFigure;
+use Geopagos\AbstractFigure\SquareFigure;
 
 require '../vendor/autoload.php';
 
@@ -51,3 +52,9 @@ $circleFactory = FigureFactory::create(['name' => 'Circulo'])
 
 $circleFactory->calculateArea();
 $circleFactory->show();
+
+$squareFactory = FigureFactory::create(['name' => 'Cuadrado'])
+    ->setFigure(new SquareFigure(['slide' => 7]));
+
+$squareFactory->calculateArea();
+$squareFactory->show();
