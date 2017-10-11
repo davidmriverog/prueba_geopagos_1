@@ -2,6 +2,12 @@
 
 namespace Geopagos\AbstractFigure;
 
+/**
+ * abstract class InterfaceFigure.
+ *
+ * @package Geopagos\AbstractFigure;
+ * @author  David Rvero <[<davidmriverog@gmail.com>]>
+ */
 abstract class InterfaceFigure
 {
     /**
@@ -14,11 +20,21 @@ abstract class InterfaceFigure
      */
     protected $area;
 
+    /**
+     * InterfaceFigure construct.
+     * 
+     * @param array $data
+     */
     public function __construct($data)
     {
         $this->data = $data;
     }
 
+    /**
+     * Get Area.
+     * 
+     * @return array
+     */
     public function getArea()
     {
         return $this->area;

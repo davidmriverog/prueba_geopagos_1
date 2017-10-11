@@ -79,11 +79,21 @@ class Geometric
         return $this;
     }
 
+    /**
+     * Calculate Area Figure Class.
+     * 
+     * @return mixed
+     */
     public function calculateArea()
     {
         return $this->figure->calculateArea();
     }
 
+    /**
+     * Get Area Figure
+     * 
+     * @return double
+     */
     public function getArea()
     {
         return $this->figure->getArea();
@@ -121,5 +131,15 @@ class Geometric
     public function fill(array $attributes=[])
     {
         $this->attributes = $attributes;
+    }
+
+    /**
+     * Show Message
+     * 
+     * @return mixed
+     */
+    public function show()
+    {
+        return show("Figura: {$this->name} tiene un area de: {$this->figure->getArea()}");
     }
 }

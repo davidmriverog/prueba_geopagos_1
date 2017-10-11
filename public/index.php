@@ -50,5 +50,4 @@ $circleFactory = FigureFactory::create(['name' => 'Circulo'])
     ->setFigure(new CircleFigure(['radio' => 2]));
 
 $circleFactory->calculateArea();
-
-show("Figura: {$circleFactory->name} tiene un area de: {$circleFactory->getArea()}");
+$circleFactory->show();
